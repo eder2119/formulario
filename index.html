@@ -1,0 +1,87 @@
+<html>
+
+<body>
+  <h1>INFORMACION DEL USUARIO</h1>
+  <form action="">
+    <label for="nombre">nombre</label>
+    <input type="text" name="nombre" placeholder="ingrese su nombre" minlength="4" maxlength="10" required>
+    <br>
+    <div>
+      <label for="identificacion">identificacion</label>
+      <input type="number" name="numeros" placeholder="numero de identificacion" required>
+    </div>
+    <label for="cedula">tipo de identificacion</label>
+    <select name="cedula" id="cedula">
+      <option value="1"> t.i</option>
+      <option value="2" selected> c.c</option>
+      <option value="3"> c.extranjera</option>
+    </select>
+    <br>
+    <div>
+      <label for="tipo de solicitante">solicitante</label>
+      <select name="tipo de solicitante" id="Solicitante">
+        <option value="1">coordinador</option>
+        <option value="2">estudiante</option>
+        <option value="3" selected>docente</option>
+      </select>
+    </div>
+    <label for="correo">correo</label>
+    <input type="text" name="correo" id="Email" placeholder="ingrese su correo" required>
+    <br>
+    <H1>INFORMACION DEL CONTACTO</H1>
+    <label for="pais">pais</label>
+    <input type="text" placeholder="escriba su pais" name="Nombre" minlength="10" maxlength="20" pattern="[a-z A-Z]+"
+      required>
+    <br>
+    <label for="departamento">departamento</label>
+    <input type="text" placeholder="escriba su departamento" name="nombre" minlength="8" maxlength="14"
+      pattern="[a-z A-Z]+" required>
+    <br>
+    <label for="ciudad">ciudad</label>
+    <input type="text" placeholder="escriba su ciudad" name="nombre" minlength="5" maxlength="15" pattern="[a-z A-Z]+"
+      required>
+    <br>
+    <label for="telefono">telefono</label>
+    <input type="tel" name="telefono" id="telefono" required>
+    <br>
+    <label for="celular">celular</label>
+    <input type="number" name="celular" required>
+    <br>
+    <div>
+      <label for="medio de contacto preferido">medio de contacto preferido</label>
+      <select name="medio de contacto preferido" id="contacto">
+        <option value="1" selected>correo escrito</option>
+        <option value="2">celular</option>
+        <option value="3">presencial</option>
+      </select>
+    </div>
+    <br>
+    <div>
+      <label for="direccion">direccion</label>
+      <input type="text" name="direccion" id="direccion" placeholder="escriba su direccion" minlength="4" maxlength="12"
+        required>
+      <br>
+      <h1>INFORMACION DE SOLICITUD</h1>
+      <div>
+        <label for="fecha de vencimiento">fecha de vencimiento</label>
+        <input type="date" required>
+      </div>
+      <label for="asunto">asunto</label>
+      <input type="text" placeholder="escriba su asunto" name="quejas" id="quejas" required>
+    </div>
+    <br>
+    <label for="asunto">descripcion</label>
+    <textarea type="asunto" placeholder="escriba su queja o peticion" id="asunto" cols="30" rows="10" minlength="50"
+      maxlength="100" required></textarea>
+    <br>
+    <div>
+      <label for="adjunto">adjunto</label>
+      <input type="file" name="archivo" id="archivo" required accept=".png .jpg" multiple>
+    </div>
+    <div>
+      <button>ENVIAR</button>
+    </div>
+  </form>
+</body>
+
+</html>
